@@ -18,8 +18,6 @@
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/test">Test</RouterLink>
         <RouterLink to="/todo">Todo App</RouterLink>
       </nav>
     </div>
