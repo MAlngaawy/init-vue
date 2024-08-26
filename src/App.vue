@@ -9,7 +9,7 @@
     />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld msg="I'm Learning Vue !" />
 
       <nav>
         <RouterLink

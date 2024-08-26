@@ -11,6 +11,12 @@
   font-weight: normal;
 }
 
+@media (max-width: 640px) {
+  #app {
+    padding: 0.5rem;
+  }
+}
+
 a,
 .green {
   text-decoration: none;
