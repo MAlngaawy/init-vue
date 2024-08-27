@@ -40,6 +40,10 @@
       name: 'Todo App',
       link: '/todo',
     },
+    {
+      name: 'Prime Vue',
+      link: '/primevue',
+    },
   ]);
 </script>
 
