@@ -4,7 +4,7 @@
     class="flex flex-col sm:flex-row gap-4 my-10"
   >
     <input
-      class="text-black p-2 border sm:w-3/4 rounded-md"
+      class="text-white p-2 border sm:w-3/4 rounded-md"
       name="note"
       type="text"
     />

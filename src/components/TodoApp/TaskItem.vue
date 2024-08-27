@@ -10,6 +10,17 @@
     <div>
       {{ props?.item?.message }}
     </div>
+    <!-- <i
+      @click="
+        (event) => {
+          event.stopPropagation();
+          props.deleteItem(props?.item?.id);
+          console.log('Clicked');
+        }
+      "
+      class="pi pi-trash text-xl text-red-500 mx-2 transform hover:scale-110"
+      style="font-size: large"
+    ></i> -->
     <TrashIcon
       @click="
         (event) => {

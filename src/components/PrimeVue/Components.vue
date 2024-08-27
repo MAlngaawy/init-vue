@@ -1,7 +1,6 @@
 <template>
   <div class="mt-10">
     <h1 class="text-2xl text-white font-bold">Test Primevue Components</h1>
-
     <!-- Slider -->
     <ComponentBox title="Slide">
       <Slider v-model="value" class="w-56" />
