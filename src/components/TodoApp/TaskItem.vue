@@ -26,7 +26,6 @@
         (event) => {
           event.stopPropagation();
           props.deleteItem(props?.item?.id);
-          console.log('Clicked');
         }
       "
       class="w-5 h-5 text-red-500 mx-2 transform hover:scale-110"

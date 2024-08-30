@@ -10,14 +10,33 @@
     <ComponentBox title="Checkbox">
       <Checkbox v-model="checked" :binary="true" />
     </ComponentBox>
+
+    <ComponentBox title="Vuex">
+      <div>
+        <p>Count: {{ count }}</p>
+        <p>Double Count: {{ doubleCount }}</p>
+        <Button @click="increment">Increment</Button>
+      </div>
+    </ComponentBox>
   </div>
 </template>
 
 <script setup>
   import Slider from 'primevue/slider';
   import Checkbox from 'primevue/Checkbox';
-  import { ref } from 'vue';
+  import Button from 'primevue/button';
+  import { computed, ref } from 'vue';
   import ComponentBox from './ComponentBox.vue';
+  import { useCounterStore } from '@/stores/counter';
+  import { storeToRefs } from 'pinia';
+
+  const store = useCounterStore();
+
+  const { count, doubleCount } = storeToRefs(store);
+
+  const { increment } = store;
+
+  // store.count++
 
   const value = ref(10);
   const checked = ref(false);
